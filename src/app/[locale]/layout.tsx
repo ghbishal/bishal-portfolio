@@ -1,14 +1,18 @@
 import type { ReactNode } from 'react';
 import Loading from '@/app/[locale]/loading';
 import { routing } from '@/i18n/i18nNavigation';
+import { VariantProvider } from '@/providers/VariantProvider';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import React, { Suspense } from 'react';
 import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
 
 type Props = {
   children: ReactNode;
@@ -40,11 +44,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          <Suspense fallback={<Loading />}>{children}</Suspense>
-        </NextIntlClientProvider>
+        <VariantProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Suspense fallback={<Loading />}>{children}</Suspense>
+          </NextIntlClientProvider>
+        </VariantProvider>
       </body>
     </html>
   );
