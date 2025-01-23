@@ -44,6 +44,7 @@ export default antfu(
       'ts/consistent-type-definitions': ['error', 'type'], // Use `type` instead of `interface`
       'react/prefer-destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
       'node/prefer-global/process': 'off', // Allow using `process.env`
+      'react/no-array-index-key': 'off', // Allow using array index as key
     },
   },
 );

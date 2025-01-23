@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react';
 import Link from 'next/link';
-import { Transition } from '../ui/Transitions/Transition';
+import { Transition } from '../ui/Transitions';
 import { TextReveal } from '../ui/Typography/TextReveal';
 
 export default function Header() {

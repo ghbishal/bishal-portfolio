@@ -37,7 +37,7 @@ export function TextReveal({ children, className }: TextRevealProps) {
               transition: { delay: i * 0.02, ease: [0.215, 0.61, 0.355, 1] },
             }}
             // Unique key for each character for efficient rendering
-            key={char}
+            key={i}
             className="inline-block"
           >
             {char}

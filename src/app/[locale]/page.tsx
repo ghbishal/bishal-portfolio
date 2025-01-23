@@ -1,4 +1,5 @@
 import Header from '@/components/layout/Header';
+import Hero from '@/components/layout/Hero';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -21,8 +22,9 @@ export default async function Home({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <main className="flex h-screen flex-col items-center justify-center">
+    <main className="relative">
       <Header />
+      <Hero />
     </main>
   );
 }
