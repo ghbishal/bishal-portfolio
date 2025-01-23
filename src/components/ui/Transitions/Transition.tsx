@@ -1,3 +1,5 @@
+'use client';
+
 import { type HTMLMotionProps, motion } from 'motion/react';
 
 type TransitionProps = {} & HTMLMotionProps<'div'>;
