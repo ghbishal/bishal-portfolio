@@ -9,6 +9,14 @@ const nextConfig = {
   eslint: {
     dirs: ['.'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+    ],
+  },
 };
 
 export default withNextIntlConfig(nextConfig);

@@ -1,3 +1,4 @@
+import type { Portfolio } from '@/utils/types';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/layout/Hero';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -18,13 +19,17 @@ export async function generateMetadata({ params }: Props) {
 export default async function Home({ params }: Props) {
   const { locale } = await params;
 
+  const portfolioData = (await import('@/data/data.json')).default;
+
+  const { about } = portfolioData as Portfolio;
+
   // Enable static rendering
   setRequestLocale(locale);
 
   return (
     <main className="relative">
       <Header />
-      <Hero />
+      <Hero about={about} />
     </main>
   );
 }

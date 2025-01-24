@@ -1,0 +1,29 @@
+{
+  "about": {
+    "firstName": "Bishal",
+    "lastName": "Khadka",
+    "fullName": "Bishal Khadka",
+    "title": "Software Developer",
+    "vision": " Turning dreams into reality, once wish at a time. Ready to make yours happen?",
+    "subTitle": "Empowering ideas through code, transforming visions into reality, one line at a time.",
+    "description": "As a React developer with 5 years of experience, I have honed my skills in JavaScript and am currently learning TypeScript to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
+    "quote": "Live the Life as you want",
+    "exp_year": "5",
+    "address": "Tokyo, Japan",
+    "some_total": "90",
+    "phoneNumber": "99999999999",
+    "contactEmail": "bishalk2056@gmail.com",
+    "avatar": {
+      "public_id": "portfolio3/1713995155677-122l5x.webp",
+      "url": "https://avatars.githubusercontent.com/u/93113583?s=400&u=dac00211c8b530f9a18ecfcb0cca1c793f27b54d&v=4"
+    },
+    "alternateAvatars": [
+      {
+        "_id": "676e772d8a9e1d0a8b0647ca",
+        "public_id": "portfolio3/1713996156944-1hro1b.webp",
+        "url": "https://avatars.githubusercontent.com/u/93113583?s=400&u=dac00211c8b530f9a18ecfcb0cca1c793f27b54d&v=4"
+      }
+    ]
+  },
+  "email": "bishalk2056@gmail.com"
+}
