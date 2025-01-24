@@ -1,2 +1,3 @@
+export * from './FadeIn';
 export * from './OpacityTransition';
-export * from './Transition';
+export * from './SlideIn';
